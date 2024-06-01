@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 
 // setting the api link
 export const API_URL = `https: //www.omdbapi.com/?&apikey=${process.env.REACT_APP_MOVIE_KEY}`;
-/* plz subsribe to thapa technical channel 
-          https://www.youtube.com/thapatechnical
-         */
-
 const useFetch = (apiParams) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState({ show: "false", msg: "" });
